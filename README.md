@@ -1,24 +1,41 @@
-## Дипломный проект. Задание 1: Юнит-тесты
+# 1-я часть дипломной работы: unit-тесты для сайта [StellarBurgers](https://stellarburgers.nomoreparties.site).
 
-### Автотесты для проверки программы, которая помогает заказать бургер в Stellar Burgers
+Автотесты для проверки программы, которая помогает заказать бургер в Stellar Burgers.
+Реализованные сценарии: 
+- созданы юнит-тесты, покрывающие классы `Bun`, `Burger`, `Ingredient`, `Database`;
+- процент покрытия 100% (отчет: `htmlcov/index.html`)
 
-### Реализованные сценарии
+## Технологии
+- Python 3.10+
+- [pytest](https://docs.pytest.org/)
+- [pytest-cov](https://pypi.org/project/pytest-cov/)
 
-Созданы юнит-тесты, покрывающие классы `Bun`, `Burger`, `Ingredient`, `Database`
+## Структура проекта
+```text
+Diplom_1/
+    ├── praktikum                    # Пакет, содержащщий код программы
+    │   ├── bun.py       
+    │   ├── burger.py
+    │   ├── database.py
+    │   ├── ingredient.py
+    │   ├── ingredient_types.py
+    │   ├── order_queue_page.py
+    │ 
+    ├── tests/                       # Тестовые сценарии
+    │   ├── test_bun.py
+    │   ├── test_burger.py
+    │   ├── test_database.py
+    │   ├── test_ingredient.py
+    │   
+    ├── conftest.py              # Файл с фикстурами
+    ├── pytest.ini               # Конфигурационный файл
+    └──  requirements.txt         # Файл с зависимостями для проекта
+```
 
-Процент покрытия 100% (отчет: `htmlcov/index.html`)
+## Запуск автотестов
 
-### Структура проекта
-
-- `praktikum` - пакет, содержащий код программы
-- `tests` - пакет, содержащий тесты, разделенные по классам. Например, `bun_test.py`, `burger_test.py` и т.д.
-
-### Запуск автотестов
-
-**Установка зависимостей**
-
+1. **Установка зависимостей**
 > `$ pip install -r requirements.txt`
 
-**Запуск автотестов и создание HTML-отчета о покрытии**
-
+2. **Запуск автотестов и создание HTML-отчета о покрытии**
 >  `$ pytest --cov=praktikum --cov-report=html`
