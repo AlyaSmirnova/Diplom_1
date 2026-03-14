@@ -19,7 +19,7 @@
 This is the first part of the graduation project: a comprehensive **Unit Testing** suite for the **Stellar Burgers** application. 
 The goal of this framework is to ensure the reliability of core business logic, including burger assembly, ingredient management, and price calculation, achieving **100% code coverage**.
 
-## Tech Stack & Tools
+## 🧑‍💻 Tech Stack & Tools
 - **Language:** Python 3.13+
 - **Testing Framework:** [Pytest](https://docs.pytest.org/)
 - **Isolation:** [Unittest.Mock](https://docs.python.org) (for mocking dependencies)
@@ -27,7 +27,7 @@ The goal of this framework is to ensure the reliability of core business logic, 
 - **Reporting:** Allure Framework
 - **CI/CD:** GitHub Actions
 
-## Project Architecture
+## 📁 Project Architecture
 ```text
 Diplom_1/
     ├── .github/workflows/           # CI/CD pipeline configuration 
