@@ -17,10 +17,10 @@
 
 ## 💫 Description
 This is the first part of the graduation project: a comprehensive **Unit Testing** suite for the **Stellar Burgers** application. 
-The goal of this framework is to ensure the reliability of core business logic, including burger assembly, ingredient management, and price calculation, achieving **100% code coverage**.
+The goal of this framework is to ensure the reliability of core business logic, including burger assembly, ingredient management and price calculation, achieving **100% code coverage**.
 
 ## 🧑‍💻 Tech Stack & Tools
-- **Language:** Python 3.13+
+- **Language:** Python 3.11+
 - **Testing Framework:** [Pytest](https://docs.pytest.org/)
 - **Isolation:** [Unittest.Mock](https://docs.python.org) (for mocking dependencies)
 - **Coverage Tool:** [Pytest-cov](https://pypi.org/project/pytest-cov/)
@@ -68,8 +68,8 @@ The suite provides **100% code coverage** for the core logic of the **Stellar Bu
 * **Method Verification:** Testing `get_name()` and `get_price()` for accurate data retrieval.
 
 ### 2. Ingredient Class
-* **Initialization:** Verifying the correct assignment of ingredient types (Sauce/Filling), names, and prices.
-* **Getters Testing:** Confirming that `get_name()`, `get_price()`, and `get_type()` return the expected values.
+* **Initialization:** Verifying the correct assignment of ingredient types (Sauce/Filling), names and prices.
+* **Getters Testing:** Confirming that `get_name()`, `get_price()` and `get_type()` return the expected values.
 
 ### 3. Burger Class (Complex Logic & Mocking)
 * **Assembly Operations:** 
@@ -91,7 +91,7 @@ Clone the repository and set up a local virtual environment to ensure dependency
 > ```bash 
 > git clone https://github.com/AlyaSmirnova/Diplom_1
 > cd Diplom_1
-📦 Repository: [Sprint_5](https://github.com/AlyaSmirnova/Diplom_1)
+📦 Repository: [Diplom_1](https://github.com/AlyaSmirnova/Diplom_1)
 
 2. **Create a virtual environment**
 > ```bash 
@@ -123,7 +123,7 @@ To transform the test results into a visual, interactive HTML report:
 The project is fully automated using **GitHub Actions**. Upon every `push` to the **main** branch or any `Pull Request` creation:
 
 1.  **Environment Provisioning:** A clean **Ubuntu** runner is initialized in the cloud environment.
-2.  **Dependency Management:** The Python **3.13** environment is set up, and all required libraries (`Pytest`, `Pytest-cov`, `Allure`) are installed from `requirements.txt`.
+2.  **Dependency Management:** The Python **3.11** environment is set up, and all required libraries (`Pytest`, `Pytest-cov`, `Allure`) are installed from `requirements.txt`.
 3.  **Automated Unit Testing:** Execution of the full test suite to ensure that all core business logic functions correctly.
 4.  **Coverage Analysis:** Automated check of **Code Coverage** (100% target) to ensure no untested logic reaches the repository.
 5.  **Allure Artifact Generation:** Test results and execution logs are collected to prepare a comprehensive **Allure report**.
